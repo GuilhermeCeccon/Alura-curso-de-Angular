@@ -1,4 +1,6 @@
-class MensagemView extends Views<string> {
+import { Views } from './Views';
+
+export class MensagemView extends Views<string> {
 
     template(model: string): string {
         return `
@@ -7,3 +9,4 @@ class MensagemView extends Views<string> {
     }
 
 }
+
