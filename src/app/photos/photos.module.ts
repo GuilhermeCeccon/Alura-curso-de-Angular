@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
-import { PhotoListComponent } from './photo-list/photo-list.component';
+import { PhotoModule } from './photo/photo.module';
 import { PhotoFormModule } from './photo-form/photo-form.module';
+import { PhotoListModule } from './photo-list/photo-list.module';
+import { CardModule } from '../shared/components/card/card.module';
+import { DarkenOnHoverModule } from '../shared/directives/darken-on-hover/darken-on-hover.module';
 
 @NgModule({
-    imports: [
-        PhotosModule,
+    imports: [ 
+        PhotoModule,
         PhotoFormModule,
-        PhotoListComponent,
-
+        PhotoListModule,
+        DarkenOnHoverModule
     ]
 })
-export class PhotosModule {
-
-}
+export class PhotosModule {}
